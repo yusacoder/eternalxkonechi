@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Konechiba Senpai | Eternal Production</title>
+<meta name="description" content="Konechiba Senpai — Eternal Production çatısı altında Türkçe anime dublaj sanatçısı. Tüm sosyal medya hesapları ve dublaj projeleri burada.">
+<link rel="canonical" href="https://eternalproduction.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Konechiba Senpai | Eternal Production">
+<meta property="og:description" content="Türkçe anime dublaj sanatçısı Konechiba Senpai'nin resmi sayfası.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:url" content="https://eternalproduction.com/">
+<meta property="og:site_name" content="Eternal Production">
+<meta property="og:locale" content="tr_TR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Konechiba Senpai | Eternal Production">
+<meta name="twitter:description" content="Türkçe anime dublaj sanatçısı Konechiba Senpai'nin resmi sayfası.">
+<meta name="twitter:image" content="assets/og-image.jpg">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#5b4fe9">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div id="loading-screen" class="loading-screen">
+  <div class="loading-mark" aria-hidden="true"></div>
+</div>
+
+<div id="app-shell">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Menüyü aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="brand">Konechiba <span>Senpai</span></div>
+    </div>
+    <div class="navbar-right">
+      <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Temayı değiştir">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </button>
+      <button id="install-btn" class="nav-pill primary install-pill" aria-label="Uygulamayı yükle">
+        <i class="fa-solid fa-download"></i> Yükle
+      </button>
+    </div>
+  </header>
+
+  <!-- SIDE MENU -->
+  <div id="side-overlay" class="side-overlay"></div>
+  <nav id="side-menu" class="side-menu" aria-label="Ana menü">
+    <div class="side-menu-header">
+      <div class="brand">Konechiba <span>Senpai</span></div>
+      <button id="side-menu-close" class="side-menu-close" aria-label="Menüyü kapat">✕</button>
+    </div>
+    <div class="side-menu-section">
+      <p class="side-menu-title">Menü</p>
+      <a href="index.html" class="side-menu-link active"><span class="icon">🏠</span> Ana Sayfa</a>
+      <a href="dublaj.html" class="side-menu-link"><span class="icon">🎬</span> Dublajlarımız</a>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="page-content">
+    <section class="hero">
+      <img id="hero-logo" class="hero-logo" src="" alt="Konechiba Senpai logo" onerror="this.style.visibility='hidden'">
+      <h1 id="hero-name" class="hero-name">&nbsp;</h1>
+      <p id="hero-bio" class="hero-bio">&nbsp;</p>
+    </section>
+
+    <section id="social-grid" class="social-grid" aria-label="Sosyal medya hesapları">
+      <!-- JS ile data.json'dan otomatik oluşturulur -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Konechiba Senpai | Eternal Production<br>
+    Made with <span>❤</span> for the Anime Community.
+  </footer>
+</div>
+
+<div id="toast-stack" class="toast-stack"></div>
+
+<script src="js/main.js"></script>
+<script src="js/social.js"></script>
+</body>
+</html>
