@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    style.css — Konechiba Senpai | Eternal Production
    Premium Glassmorphism Dark/Light Theme Design
@@ -19,13 +20,13 @@
   --accent: #5b4fe9;
   --accent-glow: rgba(91, 79, 233, 0.2);
   --accent-hover: #4a3fd4;
-
+  
   /* Glassmorphism Elements */
   --glass-bg: rgba(255, 255, 255, 0.45);
   --glass-border: rgba(255, 255, 255, 0.4);
   --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
   --glass-blur: blur(20px);
-
+  
   /* Specific UI Panels */
   --nav-bg: rgba(255, 255, 255, 0.6);
   --nav-border: rgba(255, 255, 255, 0.3);
@@ -53,13 +54,13 @@ html[data-theme="dark"] {
   --accent: #7c3aed;
   --accent-glow: rgba(124, 58, 237, 0.3);
   --accent-hover: #8b5cf6;
-
+  
   /* Glassmorphic Elements - Dark Mode */
   --glass-bg: rgba(15, 14, 28, 0.55);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
   --glass-blur: blur(20px);
-
+  
   /* Specific UI Panels - Dark Mode */
   --nav-bg: rgba(12, 11, 30, 0.6);
   --nav-border: rgba(255, 255, 255, 0.05);
@@ -586,6 +587,16 @@ body {
   color: var(--accent);
 }
 
+/* Disabled State for invalid URL */
+.social-card[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.6 !important;
+}
+
+.social-card[aria-disabled="true"] .social-arrow {
+  display: none;
+}
+
 /* === DUB GRID (PROJECTS PAGE) === */
 .page-header {
   text-align: center;
@@ -712,6 +723,50 @@ body {
   font-weight: 600;
   color: var(--text-primary);
 }
+
+/* Dub Watch Button */
+.btn {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: transform var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  background: var(--border-light);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
 /* === SITE FOOTER === */
 .site-footer {
   text-align: center;
@@ -800,93 +855,26 @@ body {
     flex-direction: row;
     height: 280px;
   }
-
+  
   .dub-cover {
     width: 200px;
     height: 100%;
     border-bottom: none;
     border-right: 1px solid var(--border-light);
   }
-
+  
   .dub-body {
     flex-grow: 1;
     padding: 24px;
     justify-content: center;
   }
-
+  
   .dub-meta-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-
+  
   .btn {
     width: auto;
     align-self: flex-start;
   }
-}
-/* =======================================================
-   MOBİL NAVBAR FIX (768px ve altı)
-   ======================================================= */
-
-@media (max-width: 768px) {
-
-  /* Navbar */
-  .navbar {
-    height: 60px !important;
-    padding: 0 10px !important;
-  }
-
-  /* Sol ve sağ alanlar */
-  .navbar-left,
-  .navbar-right {
-    gap: 4px !important;
-    flex-shrink: 1;
-  }
-
-  /* Logo yazısı */
-  .brand {
-    font-size: 0.9rem !important;
-    letter-spacing: 0 !important;
-    white-space: nowrap;
-  }
-
-  /* Hamburger menü */
-  .hamburger-btn {
-    width: 34px !important;
-    height: 34px !important;
-  }
-
-  .hamburger-btn span {
-    width: 18px !important;
-  }
-
-  /* Gece - gündüz butonu */
-  .theme-toggle-btn {
-    width: 34px !important;
-    height: 34px !important;
-    font-size: 0.9rem !important;
-    margin: 0 !important;
-    flex-shrink: 0;
-  }
-
-  /* PWA / İndir butonu */
-  .nav-pill {
-    padding: 6px 10px !important;
-    font-size: 0.75rem !important;
-    gap: 4px !important;
-    white-space: nowrap;
-  }
-
-  /* Sağ tarafın taşmasını engelle */
-  .navbar-right {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
-  }
-
-  /* Sol tarafın taşmasını engelle */
-  .navbar-left {
-    display: flex !important;
-    align-items: center !important;
-  }
-
 }
