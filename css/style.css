@@ -786,3 +786,29 @@ body {
     align-self: flex-start;
   }
 }
+/* Mobil Navbar Düzenlemesi */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 12px;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    gap: 8px;
+  }
+
+  .theme-toggle-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  .nav-pill {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+}
