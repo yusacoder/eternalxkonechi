@@ -1,20 +1,44 @@
 {
   "name": "Konechiba Senpai",
   "logo": "https://photograph.eternalproduction.net/konechiba-senpai-logo.jpg",
-  "bio": "Merhaba! Ben Konechiba Senpai. High School DxD evrenine dair en iyi içerikleri sizlerle paylaşmak için buradayım. Karakter analizlerinden eğlenceli paylaşımlara, haberlerden özel içeriklere kadar her şeyi burada bulabilirsiniz. Aşağıda yer alan sosyal medya hesaplarımdan bana ulaşabilir ve paylaşımlarımı takip edebilirsiniz. Konechiba Senpai topluluğuna hoş geldiniz!",
+  "bio": "Merhaba! Ben Konechiba Senpai. High School DxD içerikleri, karakter analizleri, haberler ve eğlenceli paylaşımlar için doğru yerdesin. Sosyal medya hesaplarımdan beni takip etmeyi unutma! ✨",
 
   "socials": [
     {
-      "name": "TikTok",
+       "name": "Instagram",
+      "username": "Konechiba Senpai Instagram",
+      "url": "https://instagram.com/konechiba._.senpai",
+      "icon": "instagram"
+    },
+        {
+       "name": "Instagram",
+      "username": "Ohayo Senpai Instagram",
+      "url": "https://instagram.com/ohayo._.senpai",
+      "icon": "instagram"
+    },
+        {
+       "name": "Instagram",
+      "username": "chibi Senpai Instagram",
+      "url": "https://instagram.com/chibi._.senpai",
+      "icon": "instagram"
+    },
+    {
+       "name": "Instagram",
+      "username": "Konehub Instagram",
+      "url": "https://instagram.com/konehub_",
+      "icon": "instagram"
+    },
+    {
+     "name": "TikTok",
       "username": "Konechiba Senpai TikTok",
       "url": "https://tiktok.com/@_konechiba._.senpai_",
       "icon": "tiktok"
     },
     {
-      "name": "Instagram",
-      "username": "Konechiba Senpai Instagram",
-      "url": "https://instagram.com/konechiba._.senpai",
-      "icon": "instagram"
+     "name": "TikTok",
+      "username": "Ohayo Senpai TikTok",
+      "url": "https://www.tiktok.com/@ohayo._.senpai",
+      "icon": "tiktok"
     },
     {
       "name": "YouTube",
@@ -33,6 +57,12 @@
       "username": "Konechiba Senpai Spotify",
       "url": "https://open.spotify.com/user/313xx55ztcjseth37xnml6eongry?si=SDeHvk4TRK-GlsyqxduwoA&utm_source=copy-link&nd=1&dlsi=c78b979b3a4e40b8",
       "icon": "spotify"
-    }
+    },
+        {
+     "name": "Kick",
+      "username": "Konechiba Senpai Kick",
+      "url": "https://kick.com/konechiba-senpai",
+      "icon": "kick"
+    },
   ]
 }
