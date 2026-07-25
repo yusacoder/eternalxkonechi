@@ -1,10 +1,8 @@
 {
   "name": "Konechiba Senpai",
   "logo": "https://photograph.eternalproduction.net/konechiba-senpai-logo.jpg",
-  "bio": "Merhaba! Ben Konechiba Senpai.
-High School DxD evrenine dair en iyi içerikleri sizlerle paylaşmak için buradayım. Karakter analizlerinden eğlenceli paylaşımlara, haberlerden özel içeriklere kadar her şeyi burada bulabilirsiniz.
-Aşağıda yer alan sosyal medya hesaplarımdan bana ulaşabilir ve paylaşımlarımı takip edebilirsiniz. Konechiba Senpai topluluğuna hoş geldiniz!"
-,
+  "bio": "Merhaba! Ben Konechiba Senpai. High School DxD evrenine dair en iyi içerikleri sizlerle paylaşmak için buradayım. Karakter analizlerinden eğlenceli paylaşımlara, haberlerden özel içeriklere kadar her şeyi burada bulabilirsiniz. Aşağıda yer alan sosyal medya hesaplarımdan bana ulaşabilir ve paylaşımlarımı takip edebilirsiniz. Konechiba Senpai topluluğuna hoş geldiniz!",
+
   "socials": [
     {
       "name": "TikTok",
@@ -13,28 +11,28 @@ Aşağıda yer alan sosyal medya hesaplarımdan bana ulaşabilir ve paylaşımla
       "icon": "tiktok"
     },
     {
-      "name": "İnstagram",
-      "username": "Konechiba Senpai İnstagram",
+      "name": "Instagram",
+      "username": "Konechiba Senpai Instagram",
       "url": "https://instagram.com/konechiba._.senpai",
       "icon": "instagram"
     },
     {
       "name": "YouTube",
-      "username": "konechiba Senpai YouTube",
+      "username": "Konechiba Senpai YouTube",
       "url": "https://youtube.com/konechiba-senpai",
-      "icon": "yuotube"
+      "icon": "youtube"
     },
     {
       "name": "Pinterest",
-      "username": "Konechiba Senpai Spotify",
+      "username": "Konechiba Senpai Pinterest",
       "url": "https://tr.pinterest.com/konechiba_senpai/",
-      "icon": "instagram"
+      "icon": "pinterest"
     },
     {
       "name": "Spotify",
       "username": "@konechibasenpai",
-      "url": "https://tiktok.com/@konechibasenpai",
-      "icon": "tiktok"
+      "url": "https://open.spotify.com/",
+      "icon": "spotify"
     },
     {
       "name": "Email",
