@@ -1,0 +1,40 @@
+{
+  "dubs": [
+    {
+      "title": "Chainsaw Man Türkçe Dublaj",
+      "description": "Denji, borçlarını ödemek için iblis köpeği Pochita ile iblis avcılığı yapan genç bir çocuktur. İhanete uğrayıp öldürüldükten sonra Pochita ile birleşerek Chainsaw Man olarak yeniden doğar.",
+      "cover": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500&auto=format&fit=crop&q=60",
+      "siteLogo": "",
+      "siteName": "Eternal Production",
+      "url": "https://youtube.com/@konechibasenpai",
+      "episode": "12 / 12",
+      "quality": "1080p Ultra",
+      "date": "15.10.2025",
+      "team": "Konechiba Senpai"
+    },
+    {
+      "title": "Jujutsu Kaisen Sezon 2 Türkçe Dublaj",
+      "description": "Satoru Gojo ve Suguru Geto'nun lise yıllarına dönüyoruz. İki güçlü büyücünün dostluğu ve sonrasındaki trajik ayrılık hikayesi Türkçe dublaj seçeneğiyle sizlerle.",
+      "cover": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&auto=format&fit=crop&q=60",
+      "siteLogo": "",
+      "siteName": "Eternal Production",
+      "url": "https://youtube.com/@konechibasenpai",
+      "episode": "23 / 23",
+      "quality": "1080p Dual",
+      "date": "01.12.2025",
+      "team": "Konechiba Senpai"
+    },
+    {
+      "title": "Frieren: Beyond Journey's End Türkçe Dublaj",
+      "description": "İblis Kral'ı yenen kahraman grubunun büyücüsü Frieren, ölümsüz bir elf olarak dostlarının yaşlanıp gidişini izler. Zamanın ve insan ilişkilerinin değerini keşfedeceği yeni bir yolculuğa başlar.",
+      "cover": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=60",
+      "siteLogo": "",
+      "siteName": "Eternal Production",
+      "url": "https://youtube.com/@konechibasenpai",
+      "episode": "28 / 28",
+      "quality": "1080p Bluray",
+      "date": "20.02.2026",
+      "team": "Konechiba Senpai"
+    }
+  ]
+}
