@@ -786,29 +786,70 @@ body {
     align-self: flex-start;
   }
 }
-/* Mobil Navbar Düzenlemesi */
+/* =======================================================
+   MOBİL NAVBAR FIX (768px ve altı)
+   ======================================================= */
+
 @media (max-width: 768px) {
+
+  /* Navbar */
   .navbar {
-    padding: 0 12px;
+    height: 60px !important;
+    padding: 0 10px !important;
   }
 
+  /* Sol ve sağ alanlar */
   .navbar-left,
   .navbar-right {
-    gap: 8px;
+    gap: 4px !important;
+    flex-shrink: 1;
   }
 
-  .theme-toggle-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 0.95rem;
-  }
-
-  .nav-pill {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
-
+  /* Logo yazısı */
   .brand {
-    font-size: 1rem;
+    font-size: 0.9rem !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap;
   }
+
+  /* Hamburger menü */
+  .hamburger-btn {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .hamburger-btn span {
+    width: 18px !important;
+  }
+
+  /* Gece - gündüz butonu */
+  .theme-toggle-btn {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+    flex-shrink: 0;
+  }
+
+  /* PWA / İndir butonu */
+  .nav-pill {
+    padding: 6px 10px !important;
+    font-size: 0.75rem !important;
+    gap: 4px !important;
+    white-space: nowrap;
+  }
+
+  /* Sağ tarafın taşmasını engelle */
+  .navbar-right {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+  }
+
+  /* Sol tarafın taşmasını engelle */
+  .navbar-left {
+    display: flex !important;
+    align-items: center !important;
+  }
+
 }
