@@ -1,0 +1,43 @@
+{
+  "name": "Konechiba Senpai",
+  "logo": "https://raw.githubusercontent.com/yusacoder/yusa/main/yusacoder.jpg",
+  "bio": "Eternal Production çatısı altında profesyonel Türkçe anime dublaj sanatçısı. En sevdiğiniz anime karakterlerini Türkçe seslendiriyorum.",
+  "socials": [
+    {
+      "name": "Discord Server",
+      "username": "Eternal Production Topluluğu",
+      "url": "https://discord.gg/eternalproduction",
+      "icon": "discord"
+    },
+    {
+      "name": "YouTube",
+      "username": "@KonechibaSenpai",
+      "url": "https://youtube.com/@konechibasenpai",
+      "icon": "youtube"
+    },
+    {
+      "name": "Twitch",
+      "username": "konechibasenpai",
+      "url": "https://twitch.tv/konechibasenpai",
+      "icon": "twitch"
+    },
+    {
+      "name": "Instagram",
+      "username": "@konechibasenpai",
+      "url": "https://instagram.com/konechibasenpai",
+      "icon": "instagram"
+    },
+    {
+      "name": "TikTok",
+      "username": "@konechibasenpai",
+      "url": "https://tiktok.com/@konechibasenpai",
+      "icon": "tiktok"
+    },
+    {
+      "name": "Email",
+      "username": "contact@eternalproduction.com",
+      "url": "mailto:contact@eternalproduction.com",
+      "icon": "email"
+    }
+  ]
+}
