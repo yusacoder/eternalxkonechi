@@ -1,6 +1,6 @@
 /* ==========================================================================
    style.css — Konechiba Senpai | Eternal Production
-   Premium Glassmorphism Dark/Light Theme Design
+   Premium Glassmorphism Red & Black Theme Design
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -10,28 +10,28 @@
   /* Fonts */
   --font-main: 'Plus Jakarta Sans', sans-serif;
 
-  /* Colors - Light Theme */
-  --bg-gradient: radial-gradient(circle at 0% 0%, #f3f4f6 0%, #e5e7eb 100%);
-  --bg-solid: #f9fafb;
-  --text-primary: #111827;
-  --text-secondary: #4b5563;
-  --text-muted: #9ca3af;
-  --accent: #5b4fe9;
-  --accent-glow: rgba(91, 79, 233, 0.2);
-  --accent-hover: #4a3fd4;
+  /* Colors - Light Theme (Red & Black) */
+  --bg-gradient: radial-gradient(circle at 0% 0%, #1a0000 0%, #000000 100%);
+  --bg-solid: #0a0000;
+  --text-primary: #ffffff;
+  --text-secondary: #e5b3b3;
+  --text-muted: #8a6b6b;
+  --accent: #e50914;
+  --accent-glow: rgba(229, 9, 20, 0.25);
+  --accent-hover: #ff1a25;
 
   /* Glassmorphism Elements */
-  --glass-bg: rgba(255, 255, 255, 0.45);
-  --glass-border: rgba(255, 255, 255, 0.4);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+  --glass-bg: rgba(20, 0, 0, 0.55);
+  --glass-border: rgba(229, 9, 20, 0.25);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   --glass-blur: blur(20px);
 
   /* Specific UI Panels */
-  --nav-bg: rgba(255, 255, 255, 0.6);
-  --nav-border: rgba(255, 255, 255, 0.3);
-  --side-menu-bg: rgba(255, 255, 255, 0.95);
-  --card-hover-bg: rgba(255, 255, 255, 0.7);
-  --border-light: rgba(0, 0, 0, 0.05);
+  --nav-bg: rgba(10, 0, 0, 0.7);
+  --nav-border: rgba(229, 9, 20, 0.2);
+  --side-menu-bg: rgba(5, 0, 0, 0.97);
+  --card-hover-bg: rgba(229, 9, 20, 0.08);
+  --border-light: rgba(229, 9, 20, 0.08);
 
   /* Common Variables */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,28 +44,28 @@
 }
 
 html[data-theme="dark"] {
-  /* Colors - Dark Theme */
-  --bg-gradient: radial-gradient(circle at 0% 0%, #0c0b1e 0%, #05040d 100%);
-  --bg-solid: #05040d;
-  --text-primary: #f9fafb;
-  --text-secondary: #d1d5db;
-  --text-muted: #6b7280;
-  --accent: #7c3aed;
-  --accent-glow: rgba(124, 58, 237, 0.3);
-  --accent-hover: #8b5cf6;
+  /* Colors - Dark Theme (Red & Black) */
+  --bg-gradient: radial-gradient(circle at 0% 0%, #150000 0%, #000000 100%);
+  --bg-solid: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #e0b0b0;
+  --text-muted: #6b4d4d;
+  --accent: #ff0000;
+  --accent-glow: rgba(255, 0, 0, 0.3);
+  --accent-hover: #ff3333;
 
   /* Glassmorphic Elements - Dark Mode */
-  --glass-bg: rgba(15, 14, 28, 0.55);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  --glass-bg: rgba(15, 0, 0, 0.6);
+  --glass-border: rgba(255, 0, 0, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
   --glass-blur: blur(20px);
 
   /* Specific UI Panels - Dark Mode */
-  --nav-bg: rgba(12, 11, 30, 0.6);
-  --nav-border: rgba(255, 255, 255, 0.05);
-  --side-menu-bg: rgba(10, 9, 21, 0.97);
-  --card-hover-bg: rgba(255, 255, 255, 0.05);
-  --border-light: rgba(255, 255, 255, 0.06);
+  --nav-bg: rgba(5, 0, 0, 0.7);
+  --nav-border: rgba(255, 0, 0, 0.12);
+  --side-menu-bg: rgba(3, 0, 0, 0.98);
+  --card-hover-bg: rgba(255, 0, 0, 0.08);
+  --border-light: rgba(255, 0, 0, 0.08);
 }
 
 /* === RESET & BASE === */
@@ -323,7 +323,7 @@ body {
 .side-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 1100;
@@ -353,7 +353,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.4);
   border-right: 1px solid var(--nav-border);
 }
 
@@ -521,7 +521,7 @@ body {
 .social-card:hover {
   transform: translateY(-3px);
   background: var(--card-hover-bg);
-  box-shadow: 0 12px 30px rgba(31, 38, 135, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   border-color: var(--accent);
 }
 
@@ -688,7 +688,7 @@ body {
 }
 
 .site-footer span {
-  color: #ef4444;
+  color: #ff0000;
   display: inline-block;
   animation: heartBeat 1.2s infinite;
 }
@@ -731,11 +731,11 @@ body {
 }
 
 .toast.success {
-  border-left-color: #10b981;
+  border-left-color: #b30000;
 }
 
 .toast.error {
-  border-left-color: #ef4444;
+  border-left-color: #ff0000;
 }
 
 @keyframes toastIn {
