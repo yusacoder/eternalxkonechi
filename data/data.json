@@ -1,34 +1,37 @@
 {
   "name": "Konechiba Senpai",
   "logo": "https://photograph.eternalproduction.net/konechiba-senpai-logo.jpg",
-  "bio": "Eternal Production çatısı altında profesyonel Türkçe anime dublaj sanatçısı. En sevdiğiniz anime karakterlerini Türkçe seslendiriyorum.",
+  "bio": "Merhaba! Ben Konechiba Senpai.
+High School DxD evrenine dair en iyi içerikleri sizlerle paylaşmak için buradayım. Karakter analizlerinden eğlenceli paylaşımlara, haberlerden özel içeriklere kadar her şeyi burada bulabilirsiniz.
+Aşağıda yer alan sosyal medya hesaplarımdan bana ulaşabilir ve paylaşımlarımı takip edebilirsiniz. Konechiba Senpai topluluğuna hoş geldiniz!
+",
   "socials": [
     {
-      "name": "Discord Server",
-      "username": "Konechiba Senpai Discord topluluğu",
-      "url": "https://discord.gg/eternalproduction",
-      "icon": "discord"
+      "name": "TikTok",
+      "username": "Konechiba Senpai TikTok",
+      "url": "https://tiktok.com/@_konechiba._.senpai_",
+      "icon": "tiktok"
     },
     {
-      "name": "YouTube",
-      "username": "Konechiba Senpai",
-      "url": "https://youtube.com/@konechibasenpai",
-      "icon": "youtube"
-    },
-    {
-      "name": "Twitch",
-      "username": "konechibasenpai",
-      "url": "https://twitch.tv/konechibasenpai",
-      "icon": "twitch"
-    },
-    {
-      "name": "Instagram",
-      "username": "@konechiba Senpai",
+      "name": "İnstagram",
+      "username": "Konechiba Senpai İnstagram",
       "url": "https://instagram.com/konechiba._.senpai",
       "icon": "instagram"
     },
     {
-      "name": "TikTok",
+      "name": "YouTube",
+      "username": "konechiba Senpai YouTube",
+      "url": "https://youtube.com/konechiba-senpai",
+      "icon": "yuotube"
+    },
+    {
+      "name": "Pinterest",
+      "username": "Konechiba Senpai Spotify",
+      "url": "https://tr.pinterest.com/konechiba_senpai/",
+      "icon": "instagram"
+    },
+    {
+      "name": "Spotify",
       "username": "@konechibasenpai",
       "url": "https://tiktok.com/@konechibasenpai",
       "icon": "tiktok"
