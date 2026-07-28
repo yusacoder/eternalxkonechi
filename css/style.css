@@ -46,27 +46,38 @@
 
 html[data-theme="dark"] {
   /* Colors - Dark Theme */
-  --bg-gradient: radial-gradient(circle at 0% 0%, #0c0b1e 0%, #05040d 100%);
-  --bg-solid: #05040d;
+  --bg-gradient: radial-gradient(
+    circle at top left,
+    #8b0000 0%,
+    #4d0000 25%,
+    #1a0000 50%,
+    #050505 75%,
+    #000000 100%
+  );
+
+  --bg-solid: #000000;
   --text-primary: #f9fafb;
   --text-secondary: #d1d5db;
-  --text-muted: #6b7280;
-  --accent: #7c3aed;
-  --accent-glow: rgba(124, 58, 237, 0.3);
-  --accent-hover: #8b5cf6;
-  
-  /* Glassmorphic Elements - Dark Mode */
-  --glass-bg: rgba(15, 14, 28, 0.55);
+  --text-muted: #9ca3af;
+
+  /* Red Theme */
+  --accent: #ff1a1a;
+  --accent-glow: rgba(255, 0, 0, 0.30);
+  --accent-hover: #ff4040;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(20, 0, 0, 0.55);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  --glass-shadow: 0 8px 32px rgba(255, 0, 0, 0.15);
   --glass-blur: blur(20px);
-  
-  /* Specific UI Panels - Dark Mode */
-  --nav-bg: rgba(12, 11, 30, 0.6);
-  --nav-border: rgba(255, 255, 255, 0.05);
-  --side-menu-bg: rgba(10, 9, 21, 0.97);
-  --card-hover-bg: rgba(255, 255, 255, 0.05);
+
+  /* Panels */
+  --nav-bg: rgba(15, 0, 0, 0.80);
+  --nav-border: rgba(255, 0, 0, 0.08);
+  --side-menu-bg: rgba(10, 0, 0, 0.97);
+  --card-hover-bg: rgba(255, 0, 0, 0.05);
   --border-light: rgba(255, 255, 255, 0.06);
+
 }
 
 /* === RESET & BASE === */
@@ -131,18 +142,35 @@ body {
   z-index: 1;
 }
 
-/* Background Glowing Orbs */
-#app-shell::before, #app-shell::after {
+#app-shell::before,
+#app-shell::after {
   content: "";
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  background: var(--accent-glow);
-  filter: blur(100px);
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 0.35) 0%,
+    rgba(120, 0, 0, 0.20) 40%,
+    transparent 100%
+  );
+  filter: blur(120px);
   z-index: -1;
   pointer-events: none;
   animation: float 10s ease-in-out infinite alternate;
+}
+
+#app-shell::before {
+  top: 5%;
+  left: -150px;
+}
+
+#app-shell::after {
+  bottom: 10%;
+  right: -150px;
+  animation-delay: -5s;
+
 }
 
 #app-shell::before {
