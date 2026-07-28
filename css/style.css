@@ -11,28 +11,35 @@
   /* Fonts */
   --font-main: 'Plus Jakarta Sans', sans-serif;
 
-  /* Colors - Light Theme */
-  --bg-gradient: radial-gradient(circle at 0% 0%, #f3f4f6 0%, #e5e7eb 100%);
-  --bg-solid: #f9fafb;
-  --text-primary: #111827;
-  --text-secondary: #4b5563;
+  /* Colors - Default Black & Red Theme (formerly Light) */
+  --bg-gradient: radial-gradient(
+    circle at top left,
+    #4d0000 0%,
+    #220000 25%,
+    #0f0000 50%,
+    #050505 75%,
+    #000000 100%
+  );
+  --bg-solid: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #f3f4f6;
   --text-muted: #9ca3af;
-  --accent: #5b4fe9;
-  --accent-glow: rgba(91, 79, 233, 0.2);
-  --accent-hover: #4a3fd4;
+  --accent: #ff3333;
+  --accent-glow: rgba(255, 51, 51, 0.25);
+  --accent-hover: #ff1a1a;
   
   /* Glassmorphism Elements */
-  --glass-bg: rgba(255, 255, 255, 0.45);
-  --glass-border: rgba(255, 255, 255, 0.4);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+  --glass-bg: rgba(15, 0, 0, 0.65);
+  --glass-border: rgba(255, 51, 51, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.12);
   --glass-blur: blur(20px);
   
   /* Specific UI Panels */
-  --nav-bg: rgba(255, 255, 255, 0.6);
-  --nav-border: rgba(255, 255, 255, 0.3);
-  --side-menu-bg: rgba(255, 255, 255, 0.95);
-  --card-hover-bg: rgba(255, 255, 255, 0.7);
-  --border-light: rgba(0, 0, 0, 0.05);
+  --nav-bg: rgba(10, 0, 0, 0.85);
+  --nav-border: rgba(255, 51, 51, 0.12);
+  --side-menu-bg: rgba(5, 0, 0, 0.98);
+  --card-hover-bg: rgba(255, 0, 0, 0.08);
+  --border-light: rgba(255, 255, 255, 0.08);
 
   /* Common Variables */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,7 +52,7 @@
 }
 
 html[data-theme="dark"] {
-  /* Colors - Dark Theme */
+  /* Colors - Crimson Dark Theme */
   --bg-gradient: radial-gradient(
     circle at top left,
     #8b0000 0%,
