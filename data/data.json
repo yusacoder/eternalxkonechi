@@ -5,37 +5,37 @@
 
   "socials": [
     {
-       "name": "Instagram",
+      "name": "Instagram",
       "username": "Konechiba Senpai Instagram",
-      "url": "https://instagram.com/konechiba._.senpai",
+      "url": "https://www.instagram.com/konechiba._.senpai",
       "icon": "instagram"
     },
-        {
-       "name": "Instagram",
+    {
+      "name": "Instagram",
       "username": "Ohayo Senpai Instagram",
-      "url": "https://instagram.com/ohayo._.senpai",
+      "url": "https://www.instagram.com/ohayo._.senpai",
       "icon": "instagram"
     },
-        {
-       "name": "Instagram",
+    {
+      "name": "Instagram",
       "username": "Chibi Senpai Instagram",
-      "url": "https://instagram.com/chibi._.senpai",
+      "url": "https://www.instagram.com/chibi._.senpai",
       "icon": "instagram"
     },
     {
-       "name": "Instagram",
+      "name": "Instagram",
       "username": "Konehub Instagram",
-      "url": "https://instagram.com/konehub_",
+      "url": "https://www.instagram.com/konehub_",
       "icon": "instagram"
     },
     {
-     "name": "TikTok",
+      "name": "TikTok",
       "username": "Konechiba Senpai TikTok",
-      "url": "https://tiktok.com/@_konechiba._.senpai_",
+      "url": "https://www.tiktok.com/@_konechiba._.senpai_",
       "icon": "tiktok"
     },
     {
-     "name": "TikTok",
+      "name": "TikTok",
       "username": "Ohayo Senpai TikTok",
       "url": "https://www.tiktok.com/@ohayo._.senpai",
       "icon": "tiktok"
@@ -46,7 +46,7 @@
       "url": "https://youtube.com/konechiba-senpai",
       "icon": "youtube"
     },
-        {
+    {
       "name": "YouTube",
       "username": "Ohayo Senpai YouTube",
       "url": "https://www.youtube.com/@ohayosenpai666",
@@ -64,14 +64,14 @@
       "url": "https://open.spotify.com/user/313xx55ztcjseth37xnml6eongry?si=SDeHvk4TRK-GlsyqxduwoA&utm_source=copy-link&nd=1&dlsi=c78b979b3a4e40b8",
       "icon": "spotify"
     },
-    v    {
+    {
       "name": "Email",
       "username": "Konechiba Senpai Email",
-      "url": "konechibailetisim@gmail.com",
+      "url": "mailto:konechibailetisim@gmail.com",
       "icon": "email"
     },
-        {
-     "name": "Kick",
+    {
+      "name": "Kick",
       "username": "Konechiba Senpai Kick",
       "url": "https://kick.com/konechiba_senpai",
       "icon": "kick"
