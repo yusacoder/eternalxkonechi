@@ -42,23 +42,41 @@ self.addEventListener("activate", function (event) {
 self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
 
+  var url = new URL(event.request.url);
+  var cacheKey = event.request;
+
+  if (url.origin === self.location.origin) {
+    var pathname = url.pathname;
+    // Remove trailing slash if any (except for "/")
+    if (pathname.length > 1 && pathname.endsWith("/")) {
+      pathname = pathname.slice(0, -1);
+    }
+    if (pathname === "/" || pathname === "/index") {
+      cacheKey = new URL("/index.html", self.location.href).toString();
+    } else if (pathname === "/dublaj") {
+      cacheKey = new URL("/dublaj.html", self.location.href).toString();
+    }
+  }
+
   event.respondWith(
-    caches.match(event.request).then(function (cached) {
-      var networkFetch = fetch(event.request)
-        .then(function (response) {
-          if (response && response.status === 200) {
-            var clone = response.clone();
+    caches.match(cacheKey).then(function (cachedResponse) {
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+
+      return fetch(event.request)
+        .then(function (networkResponse) {
+          if (networkResponse && networkResponse.status === 200) {
+            var clone = networkResponse.clone();
             caches.open(CACHE_NAME).then(function (cache) {
               cache.put(event.request, clone);
             });
           }
-          return response;
+          return networkResponse;
         })
-        .catch(function () {
-          return cached;
+        .catch(function (error) {
+          throw error;
         });
-
-      return cached || networkFetch;
     })
   );
 });
