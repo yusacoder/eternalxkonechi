@@ -46,6 +46,12 @@
       "url": "https://youtube.com/konechiba-senpai",
       "icon": "youtube"
     },
+        {
+      "name": "YouTube",
+      "username": "Ohayo Senpai YouTube",
+      "url": "https://www.youtube.com/@ohayosenpai666",
+      "icon": "youtube"
+    },
     {
       "name": "Pinterest",
       "username": "Konechiba Senpai Pinterest",
@@ -57,6 +63,12 @@
       "username": "Konechiba Senpai Spotify",
       "url": "https://open.spotify.com/user/313xx55ztcjseth37xnml6eongry?si=SDeHvk4TRK-GlsyqxduwoA&utm_source=copy-link&nd=1&dlsi=c78b979b3a4e40b8",
       "icon": "spotify"
+    },
+    v    {
+      "name": "Email",
+      "username": "Konechiba Senpai Email",
+      "url": "konechibailetisim@gmail.com",
+      "icon": "email"
     },
         {
      "name": "Kick",
