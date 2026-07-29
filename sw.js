@@ -1,81 +1,108 @@
 /* ==========================================================================
    sw.js — Eternal Production Service Worker
-   Basit cache-first stratejisiyle offline destek sağlar.
+   Cache-first stratejisiyle offline destek sağlar.
    ========================================================================== */
 
-var CACHE_NAME = "eternal-production-v1";
-var CORE_ASSETS = [
-  "index.html",
-  "dublaj.html",
-  "css/style.css",
-  "js/main.js",
-  "js/social.js",
-  "js/dublaj.js",
-  "data/data.json",
-  "data/dublaj.json",
-  "manifest.json"
+const CACHE_NAME = "eternal-production-v2";
+
+const CORE_ASSETS = [
+  "/",
+  "/index.html",
+  "/dublaj.html",
+  "/css/style.css",
+  "/js/main.js",
+  "/js/social.js",
+  "/js/dublaj.js",
+  "/data/data.json",
+  "/data/dublaj.json",
+  "/manifest.json"
 ];
 
-self.addEventListener("install", function (event) {
+/* --------------------------------------------------------------------------
+   Install
+-------------------------------------------------------------------------- */
+
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(function (cache) {
-      return cache.addAll(CORE_ASSETS);
-    }).then(function () {
-      return self.skipWaiting();
-    })
+    caches.open(CACHE_NAME)
+      .then((cache) => cache.addAll(CORE_ASSETS))
+      .then(() => self.skipWaiting())
   );
 });
 
-self.addEventListener("activate", function (event) {
+/* --------------------------------------------------------------------------
+   Activate
+-------------------------------------------------------------------------- */
+
+self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then(function (keys) {
+    caches.keys().then((keys) => {
       return Promise.all(
-        keys.filter(function (key) { return key !== CACHE_NAME; })
-            .map(function (key) { return caches.delete(key); })
+        keys
+          .filter((key) => key !== CACHE_NAME)
+          .map((key) => caches.delete(key))
       );
-    }).then(function () {
-      return self.clients.claim();
-    })
+    }).then(() => self.clients.claim())
   );
 });
 
-self.addEventListener("fetch", function (event) {
+/* --------------------------------------------------------------------------
+   Fetch
+-------------------------------------------------------------------------- */
+
+self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
-  var url = new URL(event.request.url);
-  var cacheKey = event.request;
+  const url = new URL(event.request.url);
+
+  // Sadece kendi domainimiz için özel yönlendirme.
+  let cacheKey = event.request;
 
   if (url.origin === self.location.origin) {
-    var pathname = url.pathname;
-    // Remove trailing slash if any (except for "/")
+    let pathname = url.pathname;
+
+    // Gereksiz "/" karakterini kaldır.
     if (pathname.length > 1 && pathname.endsWith("/")) {
       pathname = pathname.slice(0, -1);
     }
+
+    // Temiz URL desteği.
     if (pathname === "/" || pathname === "/index") {
-      cacheKey = new URL("/index.html", self.location.href).toString();
+      cacheKey = new Request("/index.html");
     } else if (pathname === "/dublaj") {
-      cacheKey = new URL("/dublaj.html", self.location.href).toString();
+      cacheKey = new Request("/dublaj.html");
     }
   }
 
   event.respondWith(
-    caches.match(cacheKey).then(function (cachedResponse) {
+    caches.match(cacheKey).then((cachedResponse) => {
+      // Cache varsa direkt döndür.
       if (cachedResponse) {
         return cachedResponse;
       }
 
+      // Ağdan çek.
       return fetch(event.request)
-        .then(function (networkResponse) {
-          if (networkResponse && networkResponse.status === 200) {
-            var clone = networkResponse.clone();
-            caches.open(CACHE_NAME).then(function (cache) {
-              cache.put(event.request, clone);
+        .then((networkResponse) => {
+
+          // Başarılı cevapları cache'e kaydet.
+          if (
+            networkResponse &&
+            networkResponse.status === 200 &&
+            networkResponse.type === "basic"
+          ) {
+            const responseClone = networkResponse.clone();
+
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(cacheKey, responseClone);
             });
           }
+
           return networkResponse;
         })
-        .catch(function (error) {
-          throw error;
+        .catch(() => {
+          // Offline durumunda index sayfasını göstermeyi dene.
+          return caches.match("/index.html");
         });
     })
   );
